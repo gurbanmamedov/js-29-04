@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 10px;
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.directory li.expanded > ul {
+    display: block;
+  }
+  
+  .directory li.collapsed > ul {
+    display: none;
+  }
